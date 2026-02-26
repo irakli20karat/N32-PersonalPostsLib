@@ -33,9 +33,9 @@ input {
 }
 
 .body-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(50% - 20px), 1fr));
     gap: 20px;
-    flex-direction: column;
 }
 
 .body-plain-text {
@@ -47,7 +47,7 @@ input {
 
 .post-card {
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 25px;
     border-style: dotted;
     border-width: 5px;
     border-color: #b0b8ab;
